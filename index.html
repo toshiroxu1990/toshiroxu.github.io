@@ -14,7 +14,7 @@ body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
 <link rel="stylesheet" href="css/jquery.fullPage.css">
 <title>bootstrap首页</title>
 <style>
-.section { text-align: center; font: 50px "Microsoft Yahei"; color: #333;}
+.section { text-align: center; font-family:"Microsoft Yahei"; color: #333;}
 /* flexslider */
 .flexslider{position:relative;overflow:hidden;background:url(images/loading.gif) 50% no-repeat;}
 .slides{position:relative;z-index:1;width:100%;margin:0 auto;}
@@ -47,20 +47,44 @@ background-repeat: no-repeat; }
             </div>
         </div>
         <div class="section">
-            <div class="row" style="height:30%;">
+            <div class="row two_top" style="height:30%;">
             	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:100%;">
                 	<h2>行业布局</h2>
-                    <h4 style="margin-top:20px;color:#666;padding-left:10px;padding-right:10%;">行业领导型解决方案、自主知识产权应用软件产品和服务提供商</h4>
+                    <h4 style="margin-top:20px;color:#666;padding-left:20px;padding-right:20px;">行业领导型解决方案、自主知识产权应用软件产品和服务提供商</h4>
                     <div class="col-lg-2 col-lg-offset-5 col-xs-4 col-xs-offset-4" style="margin-top:20px;border-bottom:2px solid #0099ff;"></div>
                 </div>
             </div>
-            <div class="row" style="height:70%;">
-            	<div class="col-lg-4 col-xs-6 hybj"></div>
-                <div class="col-lg-4 col-xs-6 hybj"></div>
-                <div class="col-lg-4 col-xs-6 hybj"></div>
-                <div class="col-lg-4 col-xs-6 hybj"></div>
-                <div class="col-lg-4 col-xs-6 hybj"></div>
-                <div class="col-lg-4 col-xs-6 hybj"></div>
+            <div class="row container two_bottom" style="height:70%;margin:auto;">
+            	<div class="col-lg-4 col-xs-6 hybj" style="overflow:hidden">
+                	<img src="images/icon2.png" style="float:left;height:26px;padding-left:10%;"/>
+                    <h3 style="float:left;margin-top:0;">政府行业</h3>
+                    <p style="width:100%;float:left;padding-left:10%;text-align:left;">省级大集中，社会保障卡，公共服务，互服务，保障卡，公共服务，互联网人设</p>
+                </div>
+                <div class="col-lg-4 col-xs-6 hybj" style="overflow:hidden">
+                	<img src="images/icon2.png" style="float:left;height:26px;padding-left:10%;"/>
+                    <h3 style="float:left;margin-top:0;">政府行业</h3>
+                    <p style="width:100%;float:left;padding-left:10%;text-align:left;">省级大集中，社会保障卡，公共服务，互联网人省级大集中人设</p>
+                </div>
+                <div class="col-lg-4 col-xs-6 hybj" style="overflow:hidden">
+                	<img src="images/icon2.png" style="float:left;height:26px;padding-left:10%;"/>
+                    <h3 style="float:left;margin-top:0;">政府行业</h3>
+                    <p style="width:100%;float:left;padding-left:10%;text-align:left;">省级大集中，社会保障卡，公共服务，互联网人设，省卡，公共服务，互联网人设省级大集中，社会</p>
+                </div>
+                <div class="col-lg-4 col-xs-6 hybj" style="overflow:hidden">
+                	<img src="images/icon2.png" style="float:left;height:26px;padding-left:10%;"/>
+                    <h3 style="float:left;margin-top:0;">政府行业</h3>
+                    <p style="width:100%;float:left;padding-left:10%;text-align:left;">省级大集中，社会保障卡，公共服互联网人设省级大集中，社会保障卡，公共服务</p>
+                </div>
+                <div class="col-lg-4 col-xs-6 hybj" style="overflow:hidden">
+                	<img src="images/icon2.png" style="float:left;height:26px;padding-left:10%;"/>
+                    <h3 style="float:left;margin-top:0;">政府行业</h3>
+                    <p style="width:100%;float:left;padding-left:10%;text-align:left;">省级大集中，社会保障卡，公共服互联网人设省级大集中，社会保障卡，公共服务</p>
+                </div>
+                <div class="col-lg-4 col-xs-6 hybj" style="overflow:hidden">
+                	<img src="images/icon2.png" style="float:left;height:26px;padding-left:10%;"/>
+                    <h3 style="float:left;margin-top:0;">政府行业</h3>
+                    <p style="width:100%;float:left;padding-left:10%;text-align:left;">省级大集中，社会保障卡，公共服互联网人设省级大集中，社会保障卡，公共服务</p>
+                </div>
             </div>
         </div>
         <div class="section">
@@ -98,6 +122,8 @@ $(function(){
 		$("#slides_1").css("background-repeat","no-repeat");
 		$("#slides_2").css("background-repeat","no-repeat");
 		$("#slides_3").css("background-repeat","no-repeat");
+		$(".two_top").css("height","25%");
+		$(".two_bottom").css("height","75%");
 	}
 	$('.flexslider').flexslider({
 		directionNav: true,
